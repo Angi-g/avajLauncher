@@ -8,6 +8,16 @@ public class Coordinates {
 
     Coordinates(int longitude, int latitude, int height) {
 
+        if (height < 0) {
+            height = 0;
+        }
+        if (height > 100) {
+            height = 100;
+        }
+
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.height = height;
     }
 
     public int getLongitude() {
