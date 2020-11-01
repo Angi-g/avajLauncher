@@ -4,7 +4,7 @@ import fr._42.avaj.simulator.vehicles.Coordinates;
 
 public class WeatherProvider {
 
-    private WeatherProvider weatherProvider;
+    private static WeatherProvider weatherProvider = new WeatherProvider();
     private String[] weather = {
             "RAIN",
             "FOG",
@@ -15,14 +15,7 @@ public class WeatherProvider {
     private WeatherProvider() {
     }
 
-    /**
-     * Singleton for getting the weatherProvider
-     * @return the weatherProvider
-     */
-    public WeatherProvider getWeatherProvider() {
-        if (weatherProvider == null) {
-            return new WeatherProvider();
-        }
+    public static WeatherProvider getProvider() {
         return weatherProvider;
     }
 
