@@ -4,6 +4,7 @@ public class Aircraft {
 
     protected long id;
     protected String name;
+    protected String type;
     protected Coordinates coordinates;
     private static long idCounter = 0;
 
@@ -11,6 +12,7 @@ public class Aircraft {
         this.id = nextId();
         this.name = name;
         this.coordinates = coordinates;
+        this.type = "basic";
     }
 
     /**
@@ -20,5 +22,12 @@ public class Aircraft {
     private long nextId() {
 
         return Aircraft.idCounter++;
+    }
+
+    /**
+     * @return the type, name and matricule of the aircraft
+     */
+    public String whoAmI() {
+        return this.type + "#" + this.name + "(" + this.id + ")";
     }
 }

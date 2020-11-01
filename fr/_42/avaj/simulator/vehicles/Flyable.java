@@ -4,7 +4,9 @@ import fr._42.avaj.simulator.WeatherTower;
 
 public interface Flyable {
 
-    public void updateConditions();
+    void updateConditions();
 
-    public void registerTower(WeatherTower WeatherTower);
+    void registerTower(WeatherTower weatherTower);
+
+    String whoAmI();
 }
