@@ -27,7 +27,7 @@ public class Logger {
 
     public static void writeLine(String identity, String message) {
         try {
-            bufferedWriter.write(identity + ":" + message);
+            bufferedWriter.write(identity + ": " + message);
             bufferedWriter.newLine();
         } catch (IOException e) {
             System.out.println("An error occur while writing in simulation.txt");

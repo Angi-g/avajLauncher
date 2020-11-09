@@ -9,7 +9,7 @@ public class Helicopter extends Aircraft implements Flyable {
 
     Helicopter(String name, Coordinates coordinates) {
         super (name, coordinates);
-        this.type = this.name;
+        this.type = "Helicopter";
     }
 
     public void updateConditions() {

@@ -24,8 +24,9 @@ public class Tower {
     }
 
     protected void conditionChanged() {
-        for (Flyable observer : observers) {
-            observer.updateConditions();
-        }
+        // we do not use the enhance for here because we need to remove items while iterate, so we need the index
+         for( int i = 0; i < observers.size(); i++) {
+             observers.get(i).updateConditions();
+         }
     }
 }

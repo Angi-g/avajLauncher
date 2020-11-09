@@ -2,9 +2,9 @@ package fr._42.avaj.simulator.vehicles;
 
 public class Coordinates {
 
-    private int longitude;
-    private int latitude;
-    private int height;
+    private final int longitude;
+    private final int latitude;
+    private final int height;
 
     Coordinates(int longitude, int latitude, int height) {
 
