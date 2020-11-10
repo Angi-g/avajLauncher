@@ -15,7 +15,7 @@ public class AircraftFactory {
             case "jetplane":
                 return new JetPlane(name, coordinates);
             default:
-                throw new InvalideArgumentException("The scenario file is incorrect, the type " + type + "is unknown");
+                throw new InvalideArgumentException("The scenario file is incorrect, the type " + type + " is unknown");
         }
     }
 }

@@ -22,7 +22,7 @@ public class JetPlane extends Aircraft implements Flyable {
                     this.coordinates.getLatitude(),
                     this.coordinates.getHeight() + 2
             );
-            weatherMessage = "Remember, you ar not Icarus !";
+            weatherMessage = "Remember, you are not Icarus !";
         } else if("RAIN".equals(weather)) {
             this.coordinates = new Coordinates(
                     this.coordinates.getLongitude() + 5,
