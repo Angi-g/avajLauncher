@@ -31,12 +31,12 @@ public class Simulator {
         try {
             Logger logger = new Logger();
 
-            //parse scenario file
+            // parse scenario file
             nbOfSimulation = parseScenarioFile(aircraftList, scenarioFile);
             // register aircrafts
             aircraftList.forEach(a -> a.registerTower(weatherTower));
 
-            //run simulation with the number in the scenario file
+            // run simulation with the number in the scenario file
             for (int i = 0; i < nbOfSimulation; i++ ) {
                 weatherTower.changeWeather();
             }
