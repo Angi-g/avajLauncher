@@ -30,7 +30,9 @@ public class Logger {
             bufferedWriter.write(identity + ": " + message);
             bufferedWriter.newLine();
         } catch (IOException e) {
-            System.out.println("An error occur while writing in simulation.txt");
+            System.out.println("An error occur while writing in simulation.txt, the simulator will exit prematurely :(");
+            close();
+            System.exit(1);
         }
     }
 
